@@ -22,10 +22,11 @@ class FormMovie extends Component {
     submitMovie(e) {
     e.preventDefault();
     const url = 'https://post-a-form.herokuapp.com/api/movies/';
+    
     axios.post(url, this.state)
         .then(response => response.data)
         .then(response => {
-            alert(`Film déjà numétoté: ' ${response.id}`)
+            alert(`Your film ${response.title}has been inserted!`)
         })
         .catch(e => {
         console.error(e);
