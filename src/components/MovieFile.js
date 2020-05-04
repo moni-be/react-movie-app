@@ -1,15 +1,14 @@
 import React from 'react'
 import './MovieFile.css';
 
-
-function Movie ({movie}){
+function Movie (){
     return(
     <div className="container-fluid">
         <div className="card" >
-            <img src={movie.poster} className="card-img-top" alt={movie.title} />
+            <img src="#" className="card-img-top" alt="" />
             <div className="card-body">
-                <h5 className={movie.poster}>Card title</h5>
-                <p className="card-text">{movie.comment}</p>
+                <h5 className="card-title">Card title</h5>
+                <p className="card-text">Comment</p>
                 <a href="..." className="btn btn-primary">Go somewhere</a>
             </div>
         </div>
